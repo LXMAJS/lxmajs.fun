@@ -1,0 +1,43 @@
+<template>
+  <div id="app">
+    <router-view/>
+    <Footer/>
+  </div>
+</template>
+
+<script>
+import footer from "@/components/footer";
+
+export default {
+  name: "App",
+  components: {
+    Footer: footer
+  }
+};
+</script>
+
+<style>
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+html {
+  width: 100%;
+}
+body {
+  margin: 0;
+}
+.chy-top-pic {
+  margin: 0;
+  padding: 0;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+</style>
