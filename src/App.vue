@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Nav/>
     <router-view/>
     <Footer/>
   </div>
@@ -7,11 +8,13 @@
 
 <script>
 import footer from "@/components/footer";
+import nav from "@/components/nav";
 
 export default {
   name: "App",
   components: {
-    Footer: footer
+    Footer: footer,
+    Nav: nav
   }
 };
 </script>

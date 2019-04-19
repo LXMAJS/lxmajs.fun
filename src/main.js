@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+
+// diy components
 import store from '@/utils/store'
 import filters from '@/utils/filters'
 import global from '@/utils/global_variable'
@@ -14,6 +16,10 @@ Vue.use(Toast);
 import 'vant/lib/index.css';
 import Vant from 'vant'
 Vue.use(Vant);
+
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI)
 
 // 设置过滤器
 Object.keys(filters).forEach(k => Vue.filter(k, filters[k]))
