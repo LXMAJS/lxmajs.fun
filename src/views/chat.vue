@@ -97,11 +97,12 @@ export default {
 .container {
   position: absolute;
   margin-top: 0px;
-  background: url("../assets/background/bg1.png") no-repeat;
+  /* background: url("../assets/background/bg1.png") no-repeat; */
   height: 100%;
   width: 100%;
   overflow: hidden;
   background-size: cover;
+  background: #e9e9e9;
 
   display: flex;
   justify-content: center;
@@ -114,6 +115,7 @@ export default {
   height: 75%;
   border-radius: 3px;
   background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #e1e1e1;
   margin-top: 5%;
 }
 

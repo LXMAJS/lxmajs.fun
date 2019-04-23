@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import index from '@/views/index'
+import gallery from '@/views/gallery'
 import test from '@/views/test'
 import chat from '@/views/chat'
 
@@ -13,12 +13,12 @@ const router = new Router({
     {
       path: '/',
       name: 'default',
-      component: chat
+      component: test
     },
     {
-      path: '/index',
-      name: 'index',
-      component: index
+      path: '/gallery',
+      name: 'gallery',
+      component: gallery
     },
     {
       path: '/chat',

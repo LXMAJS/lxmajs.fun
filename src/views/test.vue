@@ -1,4 +1,5 @@
 <template>
+  <div class="container"></div>
 </template>
 
 <script>
@@ -8,11 +9,22 @@ export default {
       show: false
     };
   },
-  methods: {
-  }
+  methods: {}
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.container {
+  position: absolute;
+  margin-top: 0px;
+  background: url("../assets/background/bg-common.jpg") no-repeat;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
 
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
 </style>
