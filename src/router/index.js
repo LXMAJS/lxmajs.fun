@@ -13,7 +13,7 @@ const router = new Router({
     {
       path: '/',
       name: 'default',
-      component: test
+      component: gallery
     },
     {
       path: '/gallery',

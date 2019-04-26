@@ -1,17 +1,7 @@
 <template>
   <div class="container">
     <div class="chatroom">
-      <div class="message">
-        <ul>
-          <li v-for="item in messages" :key="item.id">
-            <a v-if="item.user">{{item.user}} ：</a>
-            {{item.text}}
-          </li>
-        </ul>
-      </div>
-      <div class="textarea">
-        <textarea v-model="text" v-on:keyup="inputing"></textarea>
-      </div>
+      
     </div>
   </div>
 </template>
@@ -117,17 +107,5 @@ export default {
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid #e1e1e1;
   margin-top: 5%;
-}
-
-.textarea {
-  height: 160px;
-  border-top: solid 1px #ddd;
-}
-.textarea textarea {
-  height: 100%;
-  width: 100%;
-  border: none;
-  padding: 0px;
-  margin-bottom: 0px;
 }
 </style>

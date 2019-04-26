@@ -32,6 +32,10 @@ html {
 body {
   margin: 0;
 }
+html,
+body {
+  height: 100%;
+}
 .chy-top-pic {
   margin: 0;
   padding: 0;

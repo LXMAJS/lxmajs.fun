@@ -3,7 +3,7 @@
     <div>
       <a>Made By</a>
       <svg class="icon" aria-hidden="true">
-        <use xlink:href="#icon-xiaolian"></use>
+        <use xlink:href="#icon-li"></use>
       </svg>
       <a>LXMAJS</a>
       &nbsp;|&nbsp;
