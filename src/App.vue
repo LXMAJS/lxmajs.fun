@@ -1,21 +1,13 @@
 <template>
   <div id="app">
-    <Head/>
     <router-view/>
-    <Footer/>
   </div>
 </template>
 
 <script>
-import head from "@/components/head";
-import footer from "@/components/footer";
 
 export default {
   name: "App",
-  components: {
-    Footer: footer,
-    Head: head
-  }
 };
 </script>
 
@@ -28,6 +20,7 @@ export default {
 }
 html {
   width: 100%;
+  background-color:darkgray
 }
 body {
   margin: 0;

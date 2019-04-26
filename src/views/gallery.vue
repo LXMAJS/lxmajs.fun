@@ -35,13 +35,10 @@ export default {
     };
   },
   mounted() {
-    this.setSize();
-    const that = this;
     window.addEventListener(
       "resize",
-      function() {
-        that.screenWidth = $(window).width();
-        that.setSize();
+      () => {
+        this.bannerHeight = this.$refs.image[0].height;
       },
       false
     );
@@ -59,6 +56,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .index {
+  
 }
 
 .bannerImg {
