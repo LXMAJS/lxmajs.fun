@@ -9,7 +9,7 @@
       label-position="left"
     >
       <div class="title-container">
-        <h3 class="title">数据分析系统</h3>
+        <h3 class="title">LXMAJS.FUN</h3>
       </div>
 
       <el-form-item prop="username">

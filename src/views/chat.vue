@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import { Toast } from 'vant';
 export default {
   name: "Chat",
   data() {
@@ -22,7 +23,7 @@ export default {
       this.websocket = new WebSocket("ws://localhost:5001/");
       this.initWebSocket();
     } else {
-      this.$toast.center("当前浏览器 Not support websocket");
+      Toast.fail("当前浏览器 Not support websocket");
     }
   },
   destroyed() {

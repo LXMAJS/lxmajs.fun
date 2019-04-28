@@ -4,7 +4,14 @@
 
 const path = require('path')
 
+const defaultSetting = ('../src/setting.js')
+const title = defaultSetting.title || 'LXMAJS.FUN'
+
 module.exports = {
+  global: {
+    title: title
+  },
+  
   dev: {
 
     // Paths
@@ -20,7 +27,7 @@ module.exports = {
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    
+
     /**
      * Source Maps
      */

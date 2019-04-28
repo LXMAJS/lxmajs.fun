@@ -1,5 +1,5 @@
 <template>
-  <div :class="classObj" class="app-wrapper">
+  <div :class="classObject" class="app-wrapper">
     <Navbar></Navbar>
     <AppMain></AppMain>
     <Footer></Footer>

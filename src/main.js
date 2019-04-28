@@ -5,37 +5,21 @@ import App from './App'
 import router from './router'
 
 // diy components
-import store from '@/utils/store'
-import filters from '@/utils/filters'
-import global from '@/utils/global_variable'
-
-import 'vue2-toast/lib/toast.css'
-import Toast from 'vue2-toast'
-Vue.use(Toast);
+import store from '@/store'
 
 import 'vant/lib/index.css';
-import Vant from 'vant'
-Vue.use(Vant);
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 
-// 设置过滤器
-Object.keys(filters).forEach(k => Vue.filter(k, filters[k]))
-
 Vue.config.productionTip = false
-
-// 设置全局常量、全局变量
-Vue.prototype.GLOBAL = global
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   store,
-  Toast,
-  Vant,
   components: { App },
   template: '<App/>'
 })

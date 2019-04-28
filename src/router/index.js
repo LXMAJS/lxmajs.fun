@@ -17,22 +17,26 @@ export const constantRoutes = [
   {
     path: '/',
     name: 'default',
-    component: Layout
+    component: Layout,
+    meta: { title: '主页', icon: 'dashboard' }
   },
   {
     path: '/gallery',
     name: 'gallery',
-    component: Layout
+    component: Layout,
+    meta: { title: '画廊', icon: 'dashboard' }
   },
   {
     path: '/chat',
     name: 'chat',
-    component: Layout
+    component: Layout,
+    meta: { title: '聊天室', icon: 'dashboard' }
   },
   {
     path: '/test',
     name: 'test',
-    component: () => import('@/views/test')
+    component: () => import('@/views/test'),
+    meta: { title: '测试页面', icon: 'dashboard' }
   }
 ]
 
