@@ -3,6 +3,7 @@
     <div class="right-menu">
       <el-dropdown class="avatar-container right-menu-item hover-effect" trigger="click">
         <div class="avatar-wrapper">
+          <a>Hello</a>
           <!-- <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar"> -->
           <!-- <i class="el-icon-caret-bottom"/> -->
         </div>
@@ -79,10 +80,11 @@ export default {
     }
 
     .avatar-container {
-      margin-right: 30px;
+      margin-right: 20px;
+      color: #eee;
 
       .avatar-wrapper {
-        margin-top: 5px;
+        // margin-top: 5px;
         position: relative;
 
         .user-avatar {

@@ -7,13 +7,14 @@ import router from './router'
 // diy components
 import store from '@/store'
 
-import 'vant/lib/index.css';
+import 'vant/lib/index.css' // vant css
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 
 import '@/iconfont' // icon
+import '@/permission' // permission controll
 
 Vue.config.productionTip = false
 

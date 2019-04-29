@@ -18,7 +18,13 @@ export const constantRoutes = [
     path: '/',
     name: 'default',
     component: Layout,
-    meta: { title: '主页', icon: 'dashboard' }
+    meta: { title: '主页', icon: 'demo' },
+    children: [{
+      path: 'demo',
+      name: 'Demo',
+      component: () => import('@/views/demo/index'),
+      meta: { title: '主页', icon: 'demo' }
+    }]
   },
   {
     path: '/gallery',
@@ -33,11 +39,15 @@ export const constantRoutes = [
     meta: { title: '聊天室', icon: 'dashboard' }
   },
   {
-    path: '/test',
-    name: 'test',
-    component: () => import('@/views/test'),
+    path: '/demo',
+    name: 'demo',
+    component: () => import('@/views/demo'),
     meta: { title: '测试页面', icon: 'dashboard' }
-  }
+  },
+  
+  // 404 page must be placed at the end !!!
+  { path: '*', redirect: '/404', hidden: true }
+
 ]
 
 // 模仿vue-admin-template写的

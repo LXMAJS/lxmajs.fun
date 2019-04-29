@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "Index",
+  name: "Gallery",
   data() {
     return {
       bannerHeight: null,

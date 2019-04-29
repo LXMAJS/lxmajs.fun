@@ -1,9 +1,10 @@
 <template>
-  <div class="container"></div>
+  <div class="container">啥也没有</div>
 </template>
 
 <script>
 export default {
+  name:'Demo',
   data() {
     return {
       show: false
@@ -17,7 +18,7 @@ export default {
 .container {
   position: absolute;
   margin-top: 0px;
-  background: url("../assets/background/bg-common.jpg") no-repeat;
+  background: url("../../assets/background/bg-common.jpg") no-repeat;
   height: 100%;
   width: 100%;
   overflow: hidden;
