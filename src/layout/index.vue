@@ -1,8 +1,10 @@
 <template>
   <div :class="classObject" class="app-wrapper">
-    <Navbar></Navbar>
-    <AppMain></AppMain>
-    <Footer></Footer>
+    <div class="main-container">
+      <Navbar></Navbar>
+      <AppMain></AppMain>
+      <Footer></Footer>
+    </div>
   </div>
 </template>
 
@@ -24,4 +26,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.main-container{
+  position: absolute;
+  margin-top: 0px;
+  // background: url("../assets/background/bg-common.jpg") no-repeat;
+  background: #eee;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  color: #eeeeee;
+}
 </style>

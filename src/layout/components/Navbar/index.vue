@@ -17,11 +17,12 @@
         </el-dropdown-menu>
       </el-dropdown>
     </div>
+    <!-- <Menu></Menu> -->
   </div>
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import Menu from "./Menu";
 
 export default {
   data() {
@@ -29,7 +30,9 @@ export default {
       activeIndex: 1
     };
   },
-  components: {},
+  components: {
+    Menu
+  },
   // computed: {
   //   ...mapGetters(["avatar"])
   // },
@@ -49,7 +52,7 @@ export default {
 .navbar {
   height: 50px;
   position: relative;
-  background: rgba(0, 21, 41, 0.6);
+  background: rgb(84, 92, 100);
   box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
 
   .right-menu {
