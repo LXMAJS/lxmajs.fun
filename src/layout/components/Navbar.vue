@@ -3,8 +3,8 @@
     <div class="right-menu">
       <el-dropdown class="avatar-container right-menu-item hover-effect" trigger="click">
         <div class="avatar-wrapper">
-          <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar">
-          <i class="el-icon-caret-bottom"/>
+          <!-- <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar"> -->
+          <!-- <i class="el-icon-caret-bottom"/> -->
         </div>
         <el-dropdown-menu slot="dropdown">
           <router-link to="/">
@@ -29,9 +29,9 @@ export default {
     };
   },
   components: {},
-  computed: {
-    ...mapGetters(["avatar"])
-  },
+  // computed: {
+  //   ...mapGetters(["avatar"])
+  // },
   methods: {
     async logout() {
       await this.$store.dispatch("user/logout");
@@ -48,7 +48,7 @@ export default {
 .navbar {
   height: 50px;
   position: relative;
-  background: #fff;
+  background: rgba(0, 21, 41, 0.6);
   box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
 
   .right-menu {

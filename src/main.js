@@ -13,6 +13,8 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 
+import '@/iconfont' // icon
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

@@ -20,7 +20,6 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
-  title: config.config.title,
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {

@@ -2,20 +2,14 @@
   <footer>
     <div>
       <a>Made By</a>
-      <svg class="icon" aria-hidden="true">
-        <use xlink:href="#icon-li"></use>
-      </svg>
+      <svg-icon icon-class="li"/>
       <a>LXMAJS</a>
       &nbsp;|&nbsp;
       <a :href="link_github" target="_blank">
-        <svg class="icon" aria-hidden="true">
-          <use xlink:href="#icon-GitHub"></use>
-        </svg>
+        <svg-icon icon-class="GitHub"/>
       </a>&nbsp;
       <a :href="link_weibo" target="_blank">
-        <svg class="icon" aria-hidden="true">
-          <use xlink:href="#icon-weibo1"></use>
-        </svg>
+        <svg-icon icon-class="weibo1"/>
       </a>
     </div>
   </footer>
