@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Layout from '../layout'
+import Layout from '@/layout'
 
 Vue.use(Router)
 
@@ -17,6 +17,7 @@ export const constantRoutes = [
   {
     path: '/',
     name: 'default',
+    redirect: '/demo',
     component: Layout,
     meta: { title: '主页', icon: 'demo' },
     children: [{

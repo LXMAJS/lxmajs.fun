@@ -19,7 +19,6 @@ export default {
   position: absolute;
   margin-top: 0px;
   // background: url("../../assets/background/bg-common.jpg") no-repeat;
-  background: #eee;
   height: 100%;
   width: 100%;
   overflow: hidden;
