@@ -1,9 +1,9 @@
 <template>
   <footer>
     <div>
-      <a>Made By</a>
+      <span>Made By</span>
       <svg-icon icon-class="li"/>
-      <a>LXMAJS</a>
+      <span>LXMAJS</span>
       &nbsp;|&nbsp;
       <a :href="link_github" target="_blank">
         <svg-icon icon-class="GitHub"/>

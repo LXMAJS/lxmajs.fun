@@ -8,6 +8,7 @@ import router from './router'
 import store from '@/store'
 
 import 'vant/lib/index.css' // vant css
+import '@/styles/index.scss'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'

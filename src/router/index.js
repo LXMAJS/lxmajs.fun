@@ -8,44 +8,48 @@ Vue.use(Router)
 export const constantRoutes = [
   {
     path: '/login',
-    component: () => import('@/views/login')
+    component: () => import('@/views/login'),
+    hidden: true
   },
   {
     path: '/404',
-    component: () => import('@/views/error/404')
+    component: () => import('@/views/error/404'),
+    hidden: true
   },
   {
     path: '/',
-    name: 'default',
     redirect: '/demo',
     component: Layout,
-    meta: { title: '主页', icon: 'demo' },
     children: [{
       path: 'demo',
-      name: 'Demo',
-      component: () => import('@/views/demo/index'),
-      meta: { title: '主页', icon: 'demo' }
+      name: 'Default',
+      meta: { title: '主页', icon: 'demo' },
+      component: () => import('@/views/demo/index')
     }]
   },
   {
     path: '/gallery',
-    name: 'gallery',
+    redirect: '/gallery/index',
     component: Layout,
-    meta: { title: '画廊', icon: 'dashboard' }
+    children: [{
+      path: 'index',
+      name: 'Default',
+      meta: { title: '画廊', icon: 'dashboard' },
+      component: () => import('@/views/gallery/index')
+    }]
   },
   {
     path: '/chat',
-    name: 'chat',
+    redirect: '/chat/index',
     component: Layout,
-    meta: { title: '聊天室', icon: 'dashboard' }
+    children: [{
+      path: 'index',
+      name: 'Default',
+      meta: { title: '聊天室', icon: 'dashboard' },
+      component: () => import('@/views/chat/index')
+    }]
   },
-  {
-    path: '/demo',
-    name: 'demo',
-    component: () => import('@/views/demo'),
-    meta: { title: '测试页面', icon: 'dashboard' }
-  },
-  
+
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 

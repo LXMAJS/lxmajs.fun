@@ -1,40 +1,39 @@
 <template>
-  <div class="nav-menu">
-    <el-menu
-      :default-active="activeIndex"
-      mode="horizontal"
-      @select="handleSelect"
-      background-color="#545c64"
-      text-color="#fff"
-      active-text-color="#ffd04b"
-    >
-      <el-menu-item index="1">处理中心</el-menu-item>
-      <el-submenu index="2">
-        <template slot="title">我的工作台</template>
-        <el-menu-item index="2-1">选项1</el-menu-item>
-        <el-menu-item index="2-2">选项2</el-menu-item>
-        <el-menu-item index="2-3">选项3</el-menu-item>
-        <el-submenu index="2-4">
-          <template slot="title">选项4</template>
-          <el-menu-item index="2-4-1">选项1</el-menu-item>
-          <el-menu-item index="2-4-2">选项2</el-menu-item>
-          <el-menu-item index="2-4-3">选项3</el-menu-item>
-        </el-submenu>
-      </el-submenu>
-      <el-menu-item index="3" disabled>消息中心</el-menu-item>
-      <el-menu-item index="4">
-        <a href="#" target="_blank">订单管理</a>
-      </el-menu-item>
-    </el-menu>
-  </div>
+  <nav class="nav-menu">
+    <MenuItem
+      v-for="route in routes"
+      :key="route.path"
+      :item="route"
+      :base-path="route.path"
+      class="nav-menu-item"
+    />
+  </nav>
 </template>
 
 <script>
+import MenuItem from "./MenuItem";
 export default {
   data() {
     return {
-      activeIndex: "1"
+      activeIndex: "index"
     };
+  },
+  components: {
+    MenuItem
+  },
+  computed: {
+    routes() {
+      return this.$router.options.routes;
+    },
+    activeMenu() {
+      const route = this.$route;
+      const { meta, path } = route;
+      // if set path, the sidebar will highlight the path you set
+      if (meta.activeMenu) {
+        return meta.activeMenu;
+      }
+      return path;
+    }
   },
   methods: {
     handleSelect(key, keyPath) {
@@ -46,12 +45,16 @@ export default {
 
 <style lang="scss" scoped>
 .nav-menu {
-  width: 80%;
-  height: 50px;
-  background: #eaea;
+  float: right;
+  margin-right: 50px;
 
-  .el-menu {
-    height: inherit;
+  &-item {
+    float: left;
+    padding: 10px;
+    cursor: pointer;
+  }
+  &-item:hover {
+    color: cornsilk;
   }
 }
 </style>

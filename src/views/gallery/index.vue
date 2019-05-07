@@ -1,10 +1,6 @@
 <template>
   <div class="index">
-    <el-carousel class="gb-carousel" :height="bannerHeight + 'px'">
-      <el-carousel-item v-for="item in bgImages" :key="item">
-        <img :src="item.src" class="bannerImg">
-      </el-carousel-item>
-    </el-carousel>
+    我是画廊
   </div>
 </template>
 
@@ -17,19 +13,19 @@ export default {
       bgImages: [
         {
           name: "bg1",
-          src: require("../assets/background/bg1.png")
+          src: require("@/assets/background/bg1.png")
         },
         {
           name: "bg2",
-          src: require("../assets/background/bg2.png")
+          src: require("@/assets/background/bg2.png")
         },
         {
           name: "bg3",
-          src: require("../assets/background/bg3.jpg")
+          src: require("@/assets/background/bg3.jpg")
         },
         {
           name: "bg-common",
-          src: require("../assets/background/bg-common.jpg")
+          src: require("@/assets/background/bg-common.jpg")
         }
       ]
     };
